@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Search from '../components/Search';
 import axios from 'axios';
 import {options} from '../components/Options'
+import { Link } from 'react-router-dom';
 
 
 
@@ -45,12 +46,12 @@ function Movies() {
              {
                 movies.length ? movies.slice(0, num).map(item => {
                       return(
-                        <a href={`#/details/${item.id}`} className='mb-10 shadowStyle p-5 rounded-md'> 
+                        <Link to={`/details/${item.id}`} className='mb-10 shadowStyle p-5 rounded-md'> 
                           <img className='w-96 h-96 object-cover rounded-md' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}/>
                           <h2 className='text-lightblue text-lg font-bold pt-2'>Title : {item.title}</h2> 
                           <p className=' my-5 text-[#324771]'>Votage average : {item.vote_average}</p> 
                           <p className='text-[#324771]'>{item.release_date}</p>
-                      </a>
+                      </Link>
                        
                       )
                     })  : <div className='text-white md:py-40 py-20 col-span-3 text-center md:text-5xl text-xl'>Search for your movie ..</div>

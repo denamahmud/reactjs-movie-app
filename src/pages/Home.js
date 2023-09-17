@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Header from '../components/Header';    
 import {options} from '../components/Options'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +24,7 @@ function Home({ genres }) {
               </div>
             
             </div>
-            <a href='#/search-movies' className='hover:text-lightblue hover:bg-white transition-all text-white text-center bg-gradient-to-r from-[#70a9f870] to-[#73bdfe] md:w-60 w-40 block p-5 rounded-lg md:text-2xl text-xl font-bold absolute sm:bottom-32 bottom-96 shadowStyle'>Find Movie </a>
+            <Link to='/search-movies' className='hover:text-lightblue hover:bg-white transition-all text-white text-center bg-gradient-to-r from-[#70a9f870] to-[#73bdfe] md:w-60 w-40 block p-5 rounded-lg md:text-2xl text-xl font-bold absolute sm:bottom-32 bottom-96 shadowStyle'>Find Movie </Link>
          </div> 
 
         <div className='flex flex-col justify-around md:p-20 p-10'>
@@ -35,10 +36,10 @@ function Home({ genres }) {
               genres.map((item, i) =>
                {
                  return(
-                   <a href={`#/movies/${item.name.toLocaleLowerCase()}`} 
+                   <Link to={`/movies/${item.name.toLocaleLowerCase()}`} 
                    className={`m-2 text-lightblue p-2 rounded-2xl text-center shadowStyle hover:bg-lightblue hover:text-white transition-all`}>
                        {item.name}
-                   </a>
+                   </Link>
                  )
                }
                    

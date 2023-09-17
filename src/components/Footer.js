@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer({genres}) {
 
@@ -19,9 +20,9 @@ function Footer({genres}) {
               genres.slice(0, 5).map((item, i) =>
                {
                  return(
-                   <a href={`#/movies/${item.name.toLocaleLowerCase()}`} className=' hover:text-lightblue transition-all ' >
+                   <Link to={`/movies/${item.name.toLocaleLowerCase()}`} className=' hover:text-lightblue transition-all ' >
                        {item.name}
-                   </a>
+                   </Link>
                  )
                }
                    
