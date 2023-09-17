@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/denamahmud/reactjs-movie-app.git/static/css/main.e2459f7f.css",
+    "main.js": "/denamahmud/reactjs-movie-app.git/static/js/main.1d8fad9a.js",
+    "static/media/movie.jpg": "/denamahmud/reactjs-movie-app.git/static/media/movie.92bf3478de05e1e9403d.jpg",
+    "index.html": "/denamahmud/reactjs-movie-app.git/index.html",
+    "main.e2459f7f.css.map": "/denamahmud/reactjs-movie-app.git/static/css/main.e2459f7f.css.map",
+    "main.1d8fad9a.js.map": "/denamahmud/reactjs-movie-app.git/static/js/main.1d8fad9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2459f7f.css",
+    "static/js/main.1d8fad9a.js"
+  ]
+}
