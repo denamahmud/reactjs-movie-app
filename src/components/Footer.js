@@ -6,7 +6,7 @@ function Footer({genres}) {
   return (
     <div className='bg-black text-white '>
         <div className='grid grid-cols-1 md:grid-cols-4 py-20 items-center'>
-              <a href='#/' className='text-center font-semibold md:text-5xl text-3xl font1 hover:text-lightblue transition-all'>MOVIE APP</a>
+              <Link to='#/' className='text-center font-semibold md:text-5xl text-3xl font1 hover:text-lightblue transition-all'>MOVIE APP</Link>
               <div className=' flex flex-col text-lg gap-2  text-center mt-10'>
                  <a href='#/' className='hover:text-lightblue transition-all'>Home</a>
                  <div>about us</div>
@@ -20,7 +20,7 @@ function Footer({genres}) {
               genres.slice(0, 5).map((item, i) =>
                {
                  return(
-                   <Link to={`/movies/${item.name.toLocaleLowerCase()}`} className=' hover:text-lightblue transition-all ' >
+                   <Link to={`#/movies/${item.name.toLocaleLowerCase()}`} className=' hover:text-lightblue transition-all ' >
                        {item.name}
                    </Link>
                  )
