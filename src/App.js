@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Movies from './pages/Movies';
 import Home from './pages/Home';  
 import './App.css';  
@@ -23,14 +23,14 @@ function App() {
 
   return (
    <>
-     <BrowserRouter>
+     <HashRouter>
         <Routes>
           <Route path="/" element={<Home genres={genres}/>}/>
           <Route path="/search-movies" Component={Movies}/> 
           <Route path="/movies/:name" Component={SearchMovies}/>  
           <Route path="/details/:id" Component={Details}/> 
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
     <Footer genres={genres} setGenres={setGenres}/>
    </>
   )

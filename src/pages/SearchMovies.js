@@ -39,7 +39,7 @@ function SearchMovies() {
         {
             dataSearch.slice(0, num).map(item => {
                 return(
-                <a href={`/details/${item.id}`} 
+                <a href={`#/details/${item.id}`} 
                 className=' bg-transparent shadowStyle md:first-of-type:mt-5 first-of-type:mt-20 md:m-5 m-5 p-5 rounded-md'> 
                     <img className='w-96 h-96 object-cover rounded-md' src={'https://image.tmdb.org/t/p/w500/' + item.poster_path}/>
                     <h2 className=' text-lightblue text-lg font-bold pt-2'>Title : {item.title}</h2> 
