@@ -59,7 +59,7 @@ useEffect(() => {
                           })
                         )
                       }
-                      <div className='text-white flex pt-10'>
+                      <div className='text-white flex pt-5'>
                           <p className='text-lightblue mr-4'>IMDB ID : </p> {details.imdb_id}
                       </div>
                       <div className='text-white flex'> <p className='text-lightblue mr-4'>Release date : </p> {details.release_date}</div>
