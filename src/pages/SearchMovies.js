@@ -42,8 +42,8 @@ function SearchMovies() {
                 <a href={`#/details/${item.id}`} 
                 className=' bg-transparent shadowStyle md:first-of-type:mt-5 first-of-type:mt-20 md:m-5 m-5 p-5 rounded-md'> 
                     <img className='w-96 h-96 object-cover rounded-md' src={'https://image.tmdb.org/t/p/w500/' + item.poster_path}/>
-                    <h2 className=' text-lightblue text-lg font-bold pt-2'>Title : {item.title}</h2> 
-                    <p className=' my-5 text-[#324771]'>Votage average : {item.vote_average}</p> 
+                    <h2 className=' text-lightblue text-lg font-bold pt-5'>{item.title}</h2> 
+                    <p className=' text-[#324771]'>Votage average : {item.vote_average}</p> 
                     <p className='text-[#324771]'>{item.release_date}</p>
                 </a>
                 )
