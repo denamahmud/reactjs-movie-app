@@ -25,10 +25,10 @@ function App() {
    <>
      <HashRouter>
         <Routes>
-          <Route path="/" element={<Home genres={genres}/>}/>
-          <Route path="/search-movies" Component={Movies}/> 
-          <Route path="/movies/:name" Component={SearchMovies}/>  
-          <Route path="/details/:id" Component={Details}/> 
+          <Route exact path="/" element={<Home genres={genres}/>}/>
+          <Route exact path="/search-movies" Component={Movies}/>  
+          <Route exact path="/movies/:name" Component={SearchMovies}/>  
+          <Route exact path="/details/:id" Component={Details}/> 
         </Routes>
     </HashRouter>
     <Footer genres={genres} setGenres={setGenres}/>

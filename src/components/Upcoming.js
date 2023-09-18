@@ -13,17 +13,17 @@ const Upcoming = ({ upcoming }) => {
                            
                               return(
                                <Carousel.Item>
-                                        <a href={`#/details/${item.id}`} >
-                                            <img className='rounded-xl' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} />
-                                            <div className='bg-[#4189CC99] p-3 relative -top-52 rounded-lg '>
-                                                <p>
-                                                    name : {item.title}
-                                                </p>
-                                                <p>
-                                                    vote_average : {item.vote_average}
-                                                </p>
-                                              </div>
-                                        </a>
+                                    <a href={`#/details/${item.id}`} >
+                                        <img className='rounded-xl' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} />
+                                        <div className='bg-[#4189CC99] p-3 relative -top-52 rounded-lg '>
+                                            <p>
+                                                name : {item.title}
+                                            </p>
+                                            <p>
+                                                vote_average : {item.vote_average}
+                                            </p>
+                                          </div>
+                                    </a>
                                       
                                </Carousel.Item>
                               )
