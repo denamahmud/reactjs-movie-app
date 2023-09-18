@@ -36,7 +36,7 @@ function Home({ genres }) {
               genres.map((item, i) =>
                {
                  return(
-                   <a href={`movies/${item.name.toLocaleLowerCase()}`} 
+                   <a href={`#/movies/${item.name.toLocaleLowerCase()}`} 
                    className={`m-2 text-lightblue p-2 rounded-2xl text-center shadowStyle hover:bg-lightblue hover:text-white transition-all`}>
                        {item.name}
                    </a>
