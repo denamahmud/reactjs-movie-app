@@ -62,11 +62,11 @@ useEffect(() => {
                       <div className='text-white my-2 flex'>
                           <p className='text-[#4189CC] mr-4'>IMDB ID : </p> {details.imdb_id}
                       </div>
-                      <div className='text-white my-2 flex'> <p className='text-[#4189CC] mr-4'>Release date : </p> {details.release_date}</div>
+                      <div className='text-white flex'> <p className='text-[#4189CC] mr-4'>Release date : </p> {details.release_date}</div>
                       <div className='text-white my-2 flex'><p className='text-[#4189CC] mr-4'>Status : </p> {details.status}</div>
                   </div>
                   
-                  <div className='md:text-lg text-md mt-5 text-justify'>{details.overview}</div>
+                  <div className='md:text-lg text-sm mt-5 text-justify'>{details.overview}</div>
                   <img className='w-96 h-60 object-cover rounded-md mt-40' src={'https://image.tmdb.org/t/p/w500/' + details.backdrop_path}/>
               </div>
       
