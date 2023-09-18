@@ -13,7 +13,7 @@ const Toprated = ({ toprated }) => {
               toprated.map(item => {
                   return(
                         <Carousel.Item>
-                            <a href={`#/details/${item.id}`} >
+                            <a href={`#/details/${item.id}`} target="_blank" rel="noopener noreferrer">
                                   <img className='rounded-xl' src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} />
                                   <div className='bg-[#4189CC99] p-3 relative -top-52 rounded-lg'>
                                         <p>
